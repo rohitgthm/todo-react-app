@@ -10,11 +10,11 @@ const TodoList = ({
   // console.log(checked);
   return (
     <div className="w-full h-full flex flex-col justify-center items-center">
-      <ul className="w-full flex flex-col justify-center items-center mt-0  max-sm:m-5">
+      <ul className="w-full flex flex-col justify-center items-center mt-0">
         {taskList.map((item, index) => (
           <li
             key={index}
-            className="bg-sky-50 text-zinc-900 w-[50%] m-2 p-5 rounded-md  text-xl font-medium flex flex-col gap-1 justify-between items-start max-sm:w-full max-sm:m-2"
+            className="bg-sky-50 text-zinc-900 w-[50%] m-2 p-5 rounded-md  text-xl font-medium flex flex-col gap-1 justify-between items-start max-sm:w-[90%] max-sm:mx-5"
           >
             <div className="w-full p-2">
               <p className="text-[13px] italic font-extralight font-mono text-green-500/90 mt-0">
