@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const TodoForm = ({ addTodoFunc, todo, setTodo }) => {
   const handleInputChange = (value) => {
-    setTodo((prev) => ({ ...prev, content: value }));
+    setTodo((prev) => ({ ...prev, id: value, content: value }));
   };
 
   return (
@@ -20,7 +20,7 @@ const TodoForm = ({ addTodoFunc, todo, setTodo }) => {
       />
       <button
         type="submit"
-        className="bg-emerald-500 hover:bg-emerald-700 text-white font-medium text-xl p-5 rounded-md transition duration-200 cursor-pointer"
+        className="bg-emerald-500 hover:bg-emerald-700 text-white font-medium text-xl p-5 rounded-md transition duration-200 cursor-pointer max-sm:hidden"
       >
         Add Todo
       </button>

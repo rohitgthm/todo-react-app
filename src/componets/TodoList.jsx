@@ -32,7 +32,7 @@ const TodoList = ({
                 {item.content}
               </p>
 
-              <div className=" flex justify-end items-end p-2 gap-5">
+              <div className="flex justify-end items-end p-2 gap-5">
                 <button
                   onClick={() => handleChecked(item)}
                   className="hover:text-green-500 cursor-pointer ml-1 transition duration-200"

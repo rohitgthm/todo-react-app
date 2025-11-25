@@ -14,7 +14,7 @@ const AddTodo = () => {
     return JSON.parse(getTaskFromLocal);
   }); // state of an array to storing todo
 
-  // function for adding todo in list
+  // function for adding todo task in list
 
   const addTodoInArray = () => {
     const { id, content, checked } = todo;
